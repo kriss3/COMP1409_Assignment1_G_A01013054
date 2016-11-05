@@ -1,0 +1,55 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files (x86)\BlueJ\jdk\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-service.jar;C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054
+-d
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files (x86)\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java...
+Constructing Javadoc information...
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java:11: warning - Tag @see:illegal character: "58" in "https://learn.bcit.ca/d2l/le/content/331960/viewContent/2110064/View"
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java:11: warning - Tag @see:illegal character: "47" in "https://learn.bcit.ca/d2l/le/content/331960/viewContent/2110064/View"
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java:11: warning - Tag @see:illegal character: "47" in "https://learn.bcit.ca/d2l/le/content/331960/viewContent/2110064/View"
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java:11: warning - Tag @see:illegal character: "47" in "https://learn.bcit.ca/d2l/le/content/331960/viewContent/2110064/View"
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java:11: warning - Tag @see:illegal character: "47" in "https://learn.bcit.ca/d2l/le/content/331960/viewContent/2110064/View"
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java:11: warning - Tag @see:illegal character: "47" in "https://learn.bcit.ca/d2l/le/content/331960/viewContent/2110064/View"
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java:11: warning - Tag @see:illegal character: "47" in "https://learn.bcit.ca/d2l/le/content/331960/viewContent/2110064/View"
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java:11: warning - Tag @see:illegal character: "47" in "https://learn.bcit.ca/d2l/le/content/331960/viewContent/2110064/View"
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java:11: warning - Tag @see:illegal character: "47" in "https://learn.bcit.ca/d2l/le/content/331960/viewContent/2110064/View"
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java:11: warning - Tag @see:illegal character: "47" in "https://learn.bcit.ca/d2l/le/content/331960/viewContent/2110064/View"
+Standard Doclet version 1.8.0_40
+Building tree for all the packages and classes...
+Generating C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\doc\Vehicle.html...
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java:11: warning - @date is an unknown tag.
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java:11: warning - Tag @see: reference not found: https://learn.bcit.ca/d2l/le/content/331960/viewContent/2110064/View
+C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\Vehicle.java:135: warning - @param argument "takes" is not a parameter name.
+Generating C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\doc\package-frame.html...
+Generating C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\doc\package-summary.html...
+Generating C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\doc\constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\doc\allclasses-frame.html...
+Generating C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\doc\allclasses-noframe.html...
+Generating C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\doc\index.html...
+Generating C:\Users\kszczurowski\Pictures\OneDrive\BCIT\1409_Semester_1\Assignment_1_G\COMP1409_Assignment1_G_A01013054\doc\stylesheet.css...
+13 warnings
