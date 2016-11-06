@@ -183,10 +183,10 @@ public class Vehicle
      */
     public void checkStandardSellingPrice(double newSellingPrice)
     {
-        double minPrice = _dealerCost + (25/100);
+        double minPrice = _dealerCost + ((_dealerCost * 25) /100);
         if(newSellingPrice <= minPrice)
         {
-            displaySellingPriceError(_dealerCost, _sellingPrice);
+            displaySellingPriceError(_dealerCost, _sellingPrice, newSellingPrice);
         }
         else
         {
@@ -245,11 +245,12 @@ public class Vehicle
      * Helper method to display error message when selling price does not meet minimum,
      * Minimum set to 25% above dealier cost
      */
-    private void displaySellingPriceError(double _dealerCost, double _sellingPrice)
+    private void displaySellingPriceError(double _dealerCost, double _sellingPrice, double newSellingPrice)
     {
         System.out.println("ERROR !!!!");
-        System.out.println("Dealer Cost: " + _dealerCost);
-        System.out.println("Selling Price: " + _sellingPrice);
-        
+        System.out.printf("Dealer Cost: $%.2f \n", _dealerCost);
+        System.out.printf("Current Selling Price: $%.2f \n", _sellingPrice);
+        System.out.printf("Proposed Selling Price: $%.2f \n", newSellingPrice);
+        System.out.println("Proposed Selling Price needs to be at lest 25% higher than Dealer Cost !");
     }
 }
