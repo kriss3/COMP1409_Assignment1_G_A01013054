@@ -1,8 +1,8 @@
 
 /**
- * Write a description of class Vehicle here.
- * 
- * @author Krzysztof Szczurowski 
+ * Vehicle class for "Jalopies Are Us" company;
+ * Assignment 1 from Gary Tong;
+ * @author Krzysztof Szczurowski - A01013054 
  * @version 1.1
  * @date 11/05/2016
  * @since 11/05/2016
@@ -10,7 +10,9 @@
  */
 public class Vehicle
 {
+    /** Min value of a year set to 1970 */
     public static final int MIN_CAR_YEAR = 1970;
+    /** Max value of a year set to 2016 */
     public static final int MAX_CAR_YEAR = 2016;
     
     private String _stockCode;
@@ -22,7 +24,9 @@ public class Vehicle
     private double _profitMargin;
     
     /**
-     * 
+     * Parameterless/default constructor for Vehicle class <br>
+     * Setting default valus for all instance variables. <br>
+     * Year variable is calculated based on Selling Prince and Dealer Cost s
      */
     public Vehicle()
     {
@@ -36,7 +40,15 @@ public class Vehicle
     }
     
     /**
+     * Custom constructor which take Stock Code, Make Model and Year; <br>
+     * For Stock Code, Make and Model, it calls respected mutator method <br>
+     * Year is checked agains MIN and MAX value; <br> 
+     * If Year passed, falls outside of perimeter the default value is set to 1978
      * 
+     * @param stockCode as String;
+     * @param make as String;
+     * @param model as String;
+     * @param year as Integer;
      */
     public Vehicle(String stockCode, String make, String model, int year)
     {
@@ -47,6 +59,8 @@ public class Vehicle
     }
     
     /**
+     * Public getter method to fetch the value of StockCode; <br>
+     * It does not take any parameters;
      * @return gets back StockCode as String;
      */
     public String getStockCode()
@@ -54,12 +68,19 @@ public class Vehicle
         return this._stockCode;
     }
     
+    /**
+     * Public setter to set the value of Stock Code; <br>
+     * It does not return any value; <br>
+     * @param value of the StockCode as String;
+     */
     public void setStockCode(String value)
     {
         this._stockCode = value;
     }
     
     /**
+     * Public get method to fetch the value of Car's Make; <br>
+     * It does not take any parameter; <br>
      * @return returns Make as String
      */
     public String getMake()
@@ -67,12 +88,17 @@ public class Vehicle
         return this._make;
     }
     
+    /**
+     * Public setter/method that sets the value of car make; <br>
+     * @param takes parameter value as String;
+     */
     public void setMake(String value)
     {
         this._make = value;
     }
     
     /**
+     * Public getter method to return Model name;
      * @return gets Model as String
      */
     public String getModel()
@@ -80,12 +106,17 @@ public class Vehicle
         return this._model;
     }
     
+    /**
+     * Public setter mettor to set the valie of Car's Model
+     * @param sets the value of a Molel as String;
+     */
     public void setModel(String value)
     {
         this._model = value;
     }
     
     /**
+     * Public getter method to return value of the Year set;
      * @return returns Year as Integer
      */
     public int getYear()
@@ -93,19 +124,27 @@ public class Vehicle
         return this._year;
     }
     
-    public void setYear(int _value)
+    /**
+     * Public setter method to set the valie of car's year; <br>
+     * It does not return any value; <br>
+     * It validate value passed in and when if falls bellow MIN and above MAX year, error message is displayed;
+     * @param value of a year passed as Integer;
+     */
+    public void setYear(int value)
     {
-        if(_value <= MIN_CAR_YEAR || _value >= MAX_CAR_YEAR)
+        if(value <= MIN_CAR_YEAR || value >= MAX_CAR_YEAR)
         {
-            printYearError(_value);
+            printYearError(value);
         }
         else
         {
-            this._year = _value;
+            this._year = value;
         }
     }
     
     /**
+     * Public getter method taht returns a value of dealer cost; <br>
+     * It does not take any parameter;
      * @return returns Dealer Cost value as Double
      */
     public double getDealerCost()
@@ -113,6 +152,11 @@ public class Vehicle
         return this._dealerCost;
     }
     
+    /**
+     * Public method/setter that sets the value of dealer cost; <br>
+     * It validates passed paramets and make sure it is not a negative number;
+     * @return returns value of dealer cost as Double;
+     */
     public void setDealerCost(double value)
     {
         if(value >=0)
@@ -122,6 +166,8 @@ public class Vehicle
     }
     
     /**
+     * Public getter/method to return value of the Selling Price; <br>
+     * It does not take a parameter; 
      * @return returns Selling Price as Double
      */
     public double getSellingPrice()
@@ -130,17 +176,11 @@ public class Vehicle
     }
     
     /**
-     * @param takes parameter value as Double
+     * Public method to check new selling price; <br>
+     * Price will be rejected if falls below 25% above dealer cost; <br>
+     * It does not return any value;
+     * @param newSellingPrice as double 
      */
-    public void setSellingPrice(double value)
-    {
-        if(value >= 0)
-        {
-            this._sellingPrice = value;
-        }
-    }
-    
-    
     public void checkStandardSellingPrice(double newSellingPrice)
     {
         double minPrice = _dealerCost + (25/100);
@@ -154,12 +194,19 @@ public class Vehicle
         }
     }
     
+    /**
+     * Public method that calculates and sets profitMargin based on sellingPrice and dealerCost; <br>
+     * It does not return any value and it does not take any parameter;
+     */
     public void calculateProfitMargin()
     {
         this._profitMargin = (_sellingPrice - _dealerCost) / _sellingPrice;
     }
     
     /**
+     * Public method that calculates Profit made in dolaras; <br>
+     * Calculation is made based on sellingPrice and dealerCost
+     * It does not take any parameter; <br>
      * @return returns calculated value of the profit in dollar amount
      */
     public double calculateProfit()
@@ -170,7 +217,8 @@ public class Vehicle
     /**
      * Method to display summary of Vehicle details <br>
      * It does not take any parametes <br>
-     * It does not return any value;
+     * It does not return any value; <br>
+     * Prints details of the Vehicle class;
      */
     public void printDetails()
     {
@@ -189,8 +237,8 @@ public class Vehicle
     private void printYearError(int year)
     {
         System.out.println("ERROR !!!! \n Year Entered: " + _year + 
-        "\nThe value for year must be between 1970 and 2016.\n" + 
-        "Please, provide correct value for value of a year !!!");
+        "The value for year must be between 1970 and 2016.\n" + 
+        "Please, provide correct year value !!!");
     } 
     
     /*
